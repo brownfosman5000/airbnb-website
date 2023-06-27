@@ -1,33 +1,217 @@
 <!doctype html>
-<html lang="en" data-bs-theme="">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
   </head>
 
   <body>
-    <section id="navigation-bar">
-        <div class="container">
-          <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-              <span class="fs-4">Sunrise Element</span>
-            </a>
 
-            <ul class="nav nav-pills">
-              <li class="nav-item"><a href="./home.html" class="nav-link active" aria-current="page">Home</a></li>
-              <li class="nav-item"><a href="./about.html" class="nav-link">About Us</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Tour</a></li>
-              <li class="nav-item"><a href="./amenities.html" class="nav-link">Amenities</a></li>
-              <li class="nav-item"><a href="./contact.html" class="nav-link">Contact Us</a></li>
-              <li class="nav-item"><a href="./book.html" class="nav-link">Book Now</a></li>
-            </ul>
-          </header>
+    <!-- Desktop Menu Navbar -->
+    <section id="navbar">
+      <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+        <div class="container">
+          <a class="navbar-brand d-md-none" href="#">
+            <svg class="bi" width="24" height="24"><use xlink:href="../images/sunrise.svg"></use></svg>
+            <h1 class="text-white">Sunrise Element</h1>
+          </a>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="#offcanvasLabel">Aperture</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 justify-content-between">
+                <li class="nav-item"><a class="nav-link" href="#">
+                  <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
+                </a></li>
+                <li class="nav-item"><a href="./home.html" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="./about.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Tour</a></li>
+                <li class="nav-item"><a href="./amenities.html" class="nav-link">Amenities</a></li>
+                <li class="nav-item"><a href="./contact.html" class="nav-link">Contact Us</a></li>
+                <li class="nav-item"><a href="./book.html" class="nav-link">Book Now</a></li>
+                  <svg class="bi" width="24" height="24"><use xlink:href="#cart"></use></svg>
+                </a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </section>
+      </nav>
+    
+      <!-- Mobile Collapsable Navbar -->
+      <div class="pos-f-t hidden">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <h4 class="text-white"><a class="dropdown-item" href="./home.html">Home</a></h4>
+            <h4 class="text-white"><a class="dropdown-item" href="./about.html">About Us</a></h4>
+            <h4 class="text-white"><a class="dropdown-item" href="./amenities.html">Amenities</a></h4>
+            <h4 class="text-white"><a class="dropdown-item" href="./contact.html">Contact Us</a></h4>
+            <h4 class="text-white"><a class="dropdown-item" href="./book.html">Book Now</a></h4>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </div>
+    </section>
+
+    <section id="amenities">
+
+      <div class="container" id="lock-featurette">
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1 mt-5">Self Check in</h2>
+            <p class="lead">Seamlessly check in to your apartment, with ease. Relax in peace and safety.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="amenity-img " src="../images/amenities/yale-lock.jpg" width="500" height="500">
+            <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"><img src="./i"</text></svg> -->
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="container">
+        <div class="row featurette" id="wifi-featurette">
+          <div class="col-md-7 order-md-2 mt-5">
+            <h2 class="featurette-heading fw-normal lh-1">Complementary High Speed Wifi</h2>
+            <p class="lead">Want to catch up on your favorite shows, attend some work meetings, or just browse the internet for that next stunning attraction, Sunrise Element provides you with high speed wifi to support your needs</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="amenity-img" src="../images/amenities/high-speed-wifi.jpeg" width="500" height="500">
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="container">
+        <div class="row featurette" id="linen-featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1  mt-5">Fresh Linens</h2>
+            <p class="lead">Sleep like a king or queen, in fresh bed sheets and pillow cases for every stay at Sunrise Element. We also include fresh towels and tablecloths.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="amenity-img" src="../images/amenities/fresh-linens.jpeg" width="500" height="500">
+            <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"><img src="./i"</text></svg> -->
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="container">
+        <div class="row featurette" id="toiletries-featurette">
+          <div class="col-md-7 order-md-2 mt-5">
+            <h2 class="featurette-heading fw-normal lh-1">Hotel Style Toiletries</h2>
+            <p class="lead">We include fresh new toiletries with every new stay at Sunrise Element.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="amenity-img" src="../images/amenities/hotel-style-toiletries.jpeg" width="500" height="500">
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="container">
+        <div class="row featurette" id="work-featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1 mt-5">Dedicated Work Space</h2>
+            <p class="lead">Have to catch up on some work, well look no further. We provide a dedicated work space to ensure focus and attention on the task at hand.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="amenity-img " src="../images/amenities/work-space.jpg" width="500" height="500">
+            <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"><img src="./i"</text></svg> -->
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="container">
+        <div class="row featurette" id="kitchen-featurette">
+          <div class="col-md-7 order-md-2 mt-5">
+            <h2 class="featurette-heading fw-normal lh-1">Kitchen Stocked With Essentials</h2>
+            <p class="lead">Want to cook your favorite meals, store some leftovers. Look no further, we provide a full kitchen stocked with all your essentials you'll need.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="amenity-img" src="../images/amenities/kitchen.png" width="500" height="500">
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="container">
+        <div class="row featurette" id="laundry-featurette">
+          <div class="col-md-7 mt-5">
+            <h2 class="featurette-heading fw-normal lh-1">In-Unit Washer & Dryer</h2>
+            <p class="lead">We provide you with an in home washer and dryer unit.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="amenity-img" src="../images/amenities/laundry.jpg" width="500" height="500">
+          </div>
+        </div>
+      </div>
+
+
+      <hr class="featurette-divider">
+
+      <div class="container">
+        <div class="row featurette" id="kitchen-featurette">
+          <div class="col-md-7 order-md-2 mt-5">
+            <h2 class="featurette-heading fw-normal lh-1">Professionally Cleaned</h2>
+            <p class="lead">With every new client comes a fresh professional clean, to ensure cleanliness for every new stay.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="amenity-img" src="../images/amenities/cleaning.jpg" width="500" height="500">
+          </div>
+        </div>
+      </div>
+      <!-- <hr class="featurette-divider" >
+
+      <div class="container">
+        <div class="row featurette" id="flexlength-featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
+            <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="amenity-img" src="../images/amenities/flexible-length.jpg" width="500" height="500">
+          </div>
+        </div>
+      </div> -->
+    
+    </section>
+
+
+    <!-- footer -->
+    <section id="footer">
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Sunrise Element LLC</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </footer>
+      </div>
+    </section>
 
   </body>
 

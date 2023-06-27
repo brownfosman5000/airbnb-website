@@ -1,34 +1,91 @@
 <!doctype html>
-<html lang="en" data-bs-theme="">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
   </head>
 
   <body>
-    <section id="navigation-bar">
+    <!-- Desktop Menu Navbar -->
+    <section id="navbar">
+      <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
         <div class="container">
-          <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-              <span class="fs-4">Sunrise Element</span>
-            </a>
-
-            <ul class="nav nav-pills">
-              <li class="nav-item"><a href="./home.html" class="nav-link active" aria-current="page">Home</a></li>
-              <li class="nav-item"><a href="./about.html" class="nav-link">About Us</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Tour</a></li>
-              <li class="nav-item"><a href="./amenities.html" class="nav-link">Amenities</a></li>
-              <li class="nav-item"><a href="./contact.html" class="nav-link">Contact Us</a></li>
-              <li class="nav-item"><a href="./book.html" class="nav-link">Book Now</a></li>
-            </ul>
-          </header>
+          <a class="navbar-brand d-md-none" href="#">
+            <svg class="bi" width="24" height="24"><use xlink:href="../images/sunrise.svg"></use></svg>
+            Sunrise Element
+          </a>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="#offcanvasLabel">Aperture</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 justify-content-between">
+                <li class="nav-item"><a class="nav-link" href="#">
+                  <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
+                </a></li>
+                <li class="nav-item"><a href="./home.html" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="./about.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Tour</a></li>
+                <li class="nav-item"><a href="./amenities.html" class="nav-link">Amenities</a></li>
+                <li class="nav-item"><a href="./contact.html" class="nav-link">Contact Us</a></li>
+                <li class="nav-item"><a href="./book.html" class="nav-link">Book Now</a></li>
+                  <svg class="bi" width="24" height="24"><use xlink:href="#cart"></use></svg>
+                </a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </section>
+      </nav>
+    
+      <!-- Mobile Collapsable Navbar -->
+      <div class="pos-f-t hidden">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <h4 class="text-white"><a class="dropdown-item" href="./home.html">Home</a></h4>
+            <h4 class="text-white"><a class="dropdown-item" href="./home.html">About Us</a></h4>
+            <h4 class="text-white"><a class="dropdown-item" href="./amenities.html">Amenities</a></h4>
+            <h4 class="text-white"><a class="dropdown-item" href="./contact.html">Contact Us</a></h4>
+            <h4 class="text-white"><a class="dropdown-item" href="./book.html">Book Now</a></h4>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="my-5">
+        <div class="p-5 text-center bg-body-tertiary">
+          <div class="container py-5">
+            <h1 class="text-body-emphasis">About Us</h1>
+            <h2 class="text-body-emphasis">Who we are and what we are about</h2>
+            <p class="col-lg-8 mx-auto lead extend-line-height">
+              Sunrise Element brings our guests a extraordinary travel experience. We offer <strong>apartments, lofts, and vacation homes to professional travelers</strong> in the most popular neighborhoods. Some of the locations are just walking distance away to the some of the most stunning attractions. <br><br>
+
+              Our rentals provide <strong>top quality amenities</strong>, such as travel-size toiletries, towels, & premium linen for every stay. In addition, we provide more of a home away from home experience with spacious kitchens and comfortable living spaces.<br><br>
+              
+              Our guests find <strong>comfort, quality, and safety</strong> at every stay. Our local teams at each location work hard to maintain a <strong>consistent quality experience</strong> for each guest. Sunrise Element is available 24/7 via text or phone call to answer any questions, concerns, or accommodations.<br><br>
+              
+              
+              Do you plan to stay with us for a month or even longer? Well, you're in the right spot. Sunrise Element offers <strong>30+ night stays</strong> to accommodate the corporate/business traveler, long-haul vacationer, and digital nomad. Located in <strong>Philidelphia</strong>, we offer travelers extended stay accommodations within our <strong>fully-furnished</strong> apartment suites that seamlessly integrate work and play while providing all the comforts of home.  
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
 
   </body>
-
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </html>
