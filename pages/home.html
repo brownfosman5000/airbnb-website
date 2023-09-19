@@ -20,7 +20,7 @@
           </a>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="#offcanvasLabel">Aperture</h5>
+              <h5 class="offcanvas-title" id="#offcanvasLabel">Sunrise Element</h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
@@ -30,10 +30,7 @@
                 </a></li>
                 <li class="nav-item"><a href="./home.html" class="nav-link active" aria-current="page">Home</a></li>
                 <li class="nav-item"><a href="./about.html" class="nav-link">About Us</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Tour</a></li>
                 <li class="nav-item"><a href="./amenities.html" class="nav-link">Amenities</a></li>
-                <li class="nav-item"><a href="./contact.html" class="nav-link">Contact Us</a></li>
-                <li class="nav-item"><a href="./book.html" class="nav-link">Book Now</a></li>
                   <svg class="bi" width="24" height="24"><use xlink:href="#cart"></use></svg>
                 </a></li>
               </ul>
@@ -49,8 +46,6 @@
             <h4 class="text-white"><a class="dropdown-item" href="./home.html">Home</a></h4>
             <h4 class="text-white"><a class="dropdown-item" href="./about.html">About Us</a></h4>
             <h4 class="text-white"><a class="dropdown-item" href="./amenities.html">Amenities</a></h4>
-            <h4 class="text-white"><a class="dropdown-item" href="./contact.html">Contact Us</a></h4>
-            <h4 class="text-white"><a class="dropdown-item" href="./book.html">Book Now</a></h4>
           </div>
         </div>
         <nav class="navbar navbar-dark bg-dark">
@@ -71,7 +66,7 @@
             <h1 class="display-3 fw-bold fade-in-text text-white">Stay with Sunrise Element</h1>
             <h3 class="fw-normal text-muted mb-3 fade-in-text text-white">RESERVE. RELAX. REPEAT.</h3>
             <div class="d-flex gap-3 justify-content-center lead fw-normal">
-              <a href="../pages/book.html"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Book Now</button></a>
+              <!-- <a href="../pages/book.html"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Book Now</button></a> -->
             </div>
           </div>
           <div class="product-device shadow-sm d-none d-md-block"></div>
@@ -104,12 +99,11 @@
             <p class="lead">Your oasis, your sanctuary in the epicenter of the city. From luxurious lofts, to beautiful homes, The Sunrise Element grants with options to find the best fit for you!
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Primary</button>
-              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+              <a href="../pages/amenities.html"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">See Amenities</button></a>
             </div>
           </div>
           <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-              <img class="rounded-lg-3 pe-5" src="../images/living-room.jpg" alt="" width="600px" height="500px">
+              <img class="rounded-lg-3 pe-5" src="../images/amenities.jpg" alt="" width="100%">
           </div>
         </div>
       </div>
@@ -122,44 +116,47 @@
         <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
           <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
             <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Stay with us in Philadelphia</h1>
-            <p class="lead"><strong>Prime</strong> Philadelphia Locations</p>
             <ul>
-              <li class="lead">Add Location</li>
-              <li class="lead">Add Location</li>
-              <li class="lead">Add Location</li>
+              <li class="lead">Washington Square West</li>
+              <li class="lead">Fairmount</li>
+              <li class="lead">Fitler Square</li>
             </ul>
             <p class="lead">Explore a day in the life of a community of artists, innovators and travelers. </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Primary</button>
-              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+              <a href="../pages/about.html"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Find Out More</button></a>
             </div>
           </div>
-          <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-              <img class="rounded-lg-3" src="../images/philly-cityview.jpg" alt="" width="100%">
+
+
+          <div class="col-lg-4 offset-lg-1 p-0 m-3 overflow-hidden shadow-lg">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../images/rocky.jpg" class="d-block w-100 h-100" alt="..." >
+                </div>
+                <div class="carousel-item">
+                  <img src="../images/stadium.jpg" class="d-block w-100 h-100" alt="..." >
+                </div>
+                <div class="carousel-item">
+                  <img src="../images/.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+              <!-- <img class="rounded-lg-3" src="../images/philly-cityview.jpg" alt="" width="100%"> -->
           </div>
         </div>
       </div>
     </section>
-    
-    <!-- footer -->
-    <section id="footer">
-      <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-            </a>
-            <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Sunrise Element LLC</span>
-          </div>
-      
-          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-          </ul>
-        </footer>
-      </div>
-    </section>
+
+
 
 
 
